@@ -52,3 +52,22 @@ user[1].email
 // console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+
+const course = {
+    course: "JS",
+    price: "999",
+    courseTeacher: "Uday"
+}
+// course.courseTeacher
+
+const {courseTeacher} = course
+const {courseTeacher: Teacher} = course      //we can also give name if the given name is long
+console.log(courseTeacher)
+console.log(Teacher)
+
+
+// {
+//     "name": "Uday"
+//     "courseName": "JavaScript"                //this is JSON API
+//     "price": "999"
+// }
