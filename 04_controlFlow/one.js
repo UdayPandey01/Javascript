@@ -40,3 +40,17 @@ if (isUserLogged) {
 // }
 
 
+const userLoggedIn = true
+const debitCard = true
+
+if (userLoggedIn && debitCard && 2==2) {
+    // console.log("Allow to buy courses")
+}
+
+const userLoggedInFromGoogle = false
+const userLoggedInFromGmail = true
+
+if (userLoggedInFromGoogle || userLoggedInFromGmail) {
+    console.log("Allow to buy courses")
+}
+
