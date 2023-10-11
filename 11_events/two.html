@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>One Piece</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const BleachText = function(){
+        document.querySelector('h1').innerHTML = "Bleach"
+    }
+    // const narutoText = function(){
+    //     document.querySelector('h1').innerHTML = "Naruto"
+    // }
+    // const dbzText = function(){
+    //     document.querySelector('h1').innerHTML = "Dragon Ball Z"
+    // }
+    // const sayUday = function(){
+    //     console.log("Uday")
+    // }
+    // setTimeout(sayUday, 2000)
+    const changeMe = setTimeout(BleachText, 2000)
+    // setTimeout(narutoText, 4000)
+    // setTimeout(dbzText, 6000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+
+
+     
+</script>
+</html>
